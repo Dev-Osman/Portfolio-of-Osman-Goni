@@ -1,0 +1,426 @@
+/* Universal code in css */
+img{
+    max-width: 100%;
+}
+*{
+  scroll-behavior: smooth;
+}
+
+
+/* nav-bar mobile icon design */
+.nav-section{
+    position: fixed;
+    width: 100%;
+    background: #000;
+    color: white !important;
+    z-index: 99;
+}
+
+
+
+.nav-link-color{
+    color: darkorange !important;
+    margin-left: 2px;
+    position: relative;
+}
+.toggoler-update-color{
+    color: darkorange !important;
+    stroke: darkorange !important;
+    fill: darkorange !important;
+}
+.nav-link-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: darkorange;
+    opacity: 1;
+    transition: .7s;
+}
+.nav-link-color:hover .nav-link-item::after{
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+}
+.hedar-btn-item{
+    border: 1px solid darkorange;
+    color: darkorange;
+    padding: 3px 5px;
+    border-radius: 5px;
+    transition: .7s;
+}
+.hedar-btn-item:hover{
+    background-color: darkorange !important;
+    color: white;
+    border-color: white;
+}
+.navigation-logo .llogo{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.nav-bar-text{
+    color: rgb(255, 255, 255) !important;
+}
+
+/* slider section design */
+.slider-section{
+    padding: 200px 0;
+    background: linear-gradient(rgba(83, 9, 9, 0.5),rgba(65, 57, 57,.5)),url(img/b-1.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-section-text h3{
+    color: white;
+}
+.slider-section-text h1{
+    color:rgb(255, 255, 255) ;
+}
+.name{
+    color: darkorange;
+}
+.hr1-line{
+    height: 3px;
+    width: 200px;
+    background-color: darkcyan;
+    border-radius: 2px;
+}
+
+/* counetr section design */
+.counetr{
+    padding: 60px 0;
+}
+
+.counter-icon{
+    font-size: 50px;
+    border: 2px solid darkcyan;
+    padding: 12px;
+    border-radius: 50%;
+    transition: .7s;
+    color: darkcyan;
+}
+.counter-icon:hover{
+    color: darkorange;
+    border-color: darkorange;
+    box-sizing: border-box;
+}
+.counter-section h5{
+    font-weight: bold;
+}
+.counter-section .counter{
+    font-weight: bold;
+    color: darkorange;
+}
+/* about-section design */
+.about-section{
+    width: auto;
+    background: rgb(218, 216, 216);
+    overflow: hidden;
+    padding: 20px 0;
+}
+.about-section-badge{
+  margin-top: 40px;
+}
+.about-section-badge i{
+  font-size: 30px;
+  color: darkcyan;
+}
+.about-secton-text{
+    text-align: left !important;
+}
+.hr2-line { 
+    height: 3px;
+    width: 200px;
+    background-color: darkcyan;
+    border-radius: 2px;
+}
+
+/* blog-section design */
+.blog-section{
+    padding: 50px 0;
+}
+
+.blog-section-img img{
+    height: 140px;
+    width: 220px;
+}
+.blog-section-content h4 {
+    font-size: 12px;
+}
+.blog-section-content p{
+    font-size: 9px;
+}
+
+
+
+/* skil section design css */
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+  }
+  
+  svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0.11);
+    /* stroke: rgb(124, 18, 18); */
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 10;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.25; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+  svg.radial-progress text {
+    fill: darkorange;
+    text-anchor: middle;
+  }
+
+
+
+  /* skill section design */
+  .skill-section{
+      background-color: rgb(211, 211, 204);
+      padding: 50px 0;
+      z-index: -1;
+  }
+
+  .web-design circle{
+      stroke:black
+  }
+  .ui-design circle{
+      stroke: chartreuse;
+  }
+
+
+
+  /* counter-section design */
+  .counter-section{
+    padding: 50px 0;
+}
+
+
+
+/* <!-- ###########################
+portfolew section design start
+########################### --> */
+
+
+.portfolew-nav-tab-section{
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.11);
+  }
+  *{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  
+  .tab-list {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .tab-item {
+    display: block;
+    background: darkcyan;
+    color: #333333;
+    padding: 5px 10px;
+    margin-top: 12px;
+  
+  }
+  
+  .tab-item.active {
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    background: darkorange;
+  }
+  
+  .tab-inner {
+    display: none;
+    /* background: rgba(114, 30, 30,.1); */
+    padding: 15px;
+  }
+  
+  .tab-inner.active {
+    display: block;
+  }
+  .portfolew-item-content{
+    padding: 100px 0;
+    border-radius: 10px;
+    background-position: top;
+    transition:ease-in-out 5s;
+    position: relative;
+    background-size: cover;
+    z-index: 1;
+    
+  }
+  .portfolew-item-content h4{
+    opacity: 0;
+    margin: auto;
+    text-align: center;
+    transition: .7s;
+  }
+  .portfolew-item-content:hover h4{
+    background-position: bottom;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .portfolew-item-content:hover{
+    background-position: bottom;
+  }
+  .portfolew-item-content::after{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.199);opacity: 0;
+   display: none;
+    visibility: hidden;
+    transition: .7s;
+    z-index: -1;
+  }
+  .portfolew-item-content:hover.portfolew-item-content::after{
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+  
+  
+  
+  .content-001{
+    background-image: url(tamplate/agency11.png);
+  }
+  .content-002{
+    background-image: url(tamplate/business11.png);
+  }
+  .content-003{
+    background-image: url(tamplate/ecommerce1.jpg);
+  }
+  .content-004{
+    background-image: url(tamplate/transport11.png);
+  }
+  .content-005{
+    background-image: url(tamplate/medicial.png);
+  }
+  .content-006{
+    background-image: url(tamplate/portfolew.jpg);
+  }
+  .content-007{
+    background-image: url(tamplate/shopify.jpg);
+  }
+  .content-008{
+    background-image: url(tamplate/industry.png);
+  }
+  .content-009{
+    background-image: url(tamplate/mobile-aps.jpg);
+  }
+  .content-010{
+    background-image: url(tamplate/wordpress\ tamplate.jpg);
+  }
+  .content-011{
+    background-image: url(tamplate/membarship.jpg);
+  }
+  .content-012{
+    background-image: url(tamplate/tranport.png);
+  }
+  
+  
+  /* <!-- ###########################
+  portfolew section design close
+  ########################### --> */
+
+
+
+  
+
+
+  .client-testimonials  img{
+  width: 60px;
+  border-radius: 50%;}
+
+.testimonials-content{
+  padding: 40px 10px;
+  background: #000;
+  margin-top: -20px;
+  color: white;
+  border-radius: 6px;
+}
+
+
+.slick-next::before, .slick-prev::before {
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: none;
+}
+
+
+
+.testimonials-content i{
+  color: rgb(255, 210, 64);
+}
+.testimonials-content p{
+  font-size: 12px;
+  color: darkorange;
+}
+.client-testimonials{
+  background: rgba(0, 0, 0, 0.281);
+  padding: 40px 0;
+}
+.lineX{
+  margin-top: -50px;
+}
+
+
+
+/* <!-- ###########################
+      contact section design start
+      ########################### --> */
+     .contact{
+       padding: 80px 0;
+       background: linear-gradient(rgba(0, 0, 0, 0.471),rgba(0, 0, 0, 0.492)),url(img/b-2.jpg);
+      background-position: center;
+      background-size: cover;
+     
+     
+     
+      }
+     
+     
+     
+      .contact-content{
+       height: 400px;
+       width: 350px;
+       background: rgba(0, 0, 0, 0.404);
+       padding: 30px 10px;
+       color: darkorange;
+       border-radius: 10px;
+     }
+
+
+
+
+
+
+
+     /* <!-- ###########################
+      contact section design start
+      ########################### --> */
